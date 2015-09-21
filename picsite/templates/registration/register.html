@@ -1,0 +1,18 @@
+{% load staticfiles %}
+{% block title %} <title>{{ site }}</title> {% endblock title %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+
+{% block content %}
+  <h1>Create an account</h1>
+
+  <form action="{% url 'picsite:register' %}" method="POST">
+      {% csrf_token %}{{ form.as_p }}
+      <input type="submit" value="Create your account">
+  </form>
+
+<br>
+<center><a href="{% url 'picsite:index' %}">Home</a></center>
+
+{% endblock %}

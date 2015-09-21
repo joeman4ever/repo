@@ -1,0 +1,14 @@
+{% load staticfiles %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+{% block title %} <title>Invalid login... </title> {% endblock %}
+
+
+<font color = "red"> Sorry, {{ username }}, your login details aren't quite right!</font>
+<p> Click <a href="{% url 'picsite:login_view' %}"> here </a> to return to login page. </p>
+
+{% block footer %}
+<!-- <a href="{% url 'picsite:home' %}"> Return to home page </a> -->
+{% endblock %}

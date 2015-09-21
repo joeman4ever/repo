@@ -1,0 +1,57 @@
+<!-- load the static template tag from staticfiles templage library, which generates absolute url of the static file --> 
+
+{# {{ varFromViewContext }}, {% Python code %}; HTML lives outside  of { } #}
+
+
+{% load staticfiles %}
+{% block title %} <title>{{ site }}</title> {% endblock title %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+<div class="header">
+	<h4>Welcome to the Family Network</h4>
+</div>
+
+
+{% if user.is_authenticated %}
+	<p>Welcome back, {{ user.username }}. Click <a href="{% url 'picsite:home' %}">here </a> to go to your home page!</p>
+{% else %}
+	<p>Please log in below: </p>
+{% endif %}
+
+{% for error in form.non_field_errors %}
+	<div class="error"><p>{{ error }}</p></div>
+{% endfor %}
+
+<!-- POSTing to django.contrib.auth.urls' built-in login view -->
+<form method="POST" action="{% url 'picsite:login' %}">
+	{% csrf_token %}
+	<table>
+		<tr>
+			<td><label for="id_username">{{ form.username.label_tag }}</label></td>
+			<td>{{ form.username }}</td>
+			{% for error in form.username.errors %}
+				<td><div class="error"> &nbsp;&nbsp <- {{ error }}</div></td>
+			{% endfor %}
+		</tr>
+		<tr>
+			<td><label for="id_password">{{ form.password.label_tag }}</label></td>
+			<td>{{ form.password }}</td>
+			{% for error in form.password.errors %}
+				<td><div class="error"> &nbsp;&nbsp <- {{ error }}</div></td>
+			{% endfor %}
+		</tr>
+	</table>
+
+	<input type="submit" value="Sign in" />
+	<input type="hidden" name="next" value="{{ next }}" />
+</form>
+
+
+	<div class="footer">
+		{% block footer %} New to the site? <a href="{% url 'picsite:register' %}"> Create an account </a> {% endblock %}
+	</div>
+
+<!-- Nifty script that gives focus to username field on page load -->
+<script type="text/javascript">document.getElementById("id_username").focus();</script>
+
+

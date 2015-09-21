@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+<div class="header">
+	<h3>{{ title }}</h3>
+</div>
+
+<div class="navbar">
+	<p><a href="{% url 'picsite:logout' %}"> Sign out </a></p>
+	<a href="{% url 'picsite:password_change' %}">Change your password</a>
+	<br />
+	<a href="{% url 'picsite:albums' %}"> Create an album</a>
+
+
+	<p>Upload a photo using the form below:</p>
+
+	<!-- the enctype declaration is needed for image uploads -->
+	<form action="{% url 'picsite:home' %}" method="POST" enctype="multipart/form-data">
+		{% csrf_token %} {{ form.as_table }}
+		<input type="submit" value="Upload" />
+	</form>
+</div>
+
+<div class="right">	
+	<!-- Display a customized welcome message for the logged in user -->
+	{% if user.is_authenticated %}
+		<p>Hi {{ user.username }}, welcome to your photo gallery!</p>
+	{% endif %}
+
+	<!-- for loop to display all uploaded images on page -->
+	{% for img in images %}
+		<!-- {{ forloop.counter }}. -->
+		<a href="{{ img.uploadPath.url }}"><img src="{{ img.uploadPath.url }}" alt="uploaded on {{ img.uploadDate }}"></a>
+	{% endfor %}
+
+</div>
+
+<div class="footer">
+	<a href="{% url 'picsite:photolist' %}">View the 5 most recent photos</a>
+	<br /><a href="{% url 'picsite:home' %}"> Return to home page </a>
+</div>
+

@@ -1,0 +1,15 @@
+{% load staticfiles %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+
+<title>{% block title %} Logged in page {% endblock %}</title>
+
+
+<h2> Hi {{ full_name }}, you are now logged in! </h2>
+<p> Click <a href="{% url 'picsite:logout' %}"> here </a> to logout. </p>
+
+{% block footer %}
+<a href="{% url 'picsite:home' %}"> Return to home page </a>
+{% endblock %}

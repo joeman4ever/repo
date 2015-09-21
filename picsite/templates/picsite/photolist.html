@@ -1,0 +1,35 @@
+<!-- load the static template tag from staticfiles templage library, which generates absolute url of the static file -->
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+{# {{ varFromViewContext }}, {% Python code %}; HTML lives outside  of { } #}
+ 
+<div class="header">
+	<h3>{{ title }}</h3>
+</div>
+
+<div class="navbar"> </div>
+
+<div class="right">
+	<!-- If there are photos in 'latest_photos' list, display them in a numbered list -->
+	{% if latest_photos %}
+		<ol reversed>
+		<!-- 'photo' is just a counter and could be anyhting (e.g. 'i') -->
+		{% for photo in latest_photos %}
+			<li>
+				<!-- using namespace:view() template tag w/ 'photo.id' as the required argument, per urls.py-->
+				<a href="{{ photo.uploadPath.url }}">{{ photo.name }}</a>
+			</li>
+		{% endfor %}
+		</ol>
+	<!-- else, if there are no photos in 'latest_photo_list', display below msg -->
+	{% else %}
+		<p>No photos are available.</p>
+	{% endif %}
+</div>
+
+<div class="footer">
+	<a href="{% url 'picsite:home' %}"> Return to home page </a>
+</div>

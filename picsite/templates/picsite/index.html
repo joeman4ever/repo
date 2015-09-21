@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+<div class="header">
+	<h3>{{ title }}</h3>
+</div>
+
+<div class="navbar">
+	<br />Link 1
+	<br />Link 2
+	<br />Link 3
+	<br />Link 4
+	<br />Link 5
+</div>
+
+<div class="right">
+	<a href="{% url 'picsite:photolist' %}">View the 5 most recent photos</a>
+</div>
+
+<div class="footer">
+	<a href="{% url 'picsite:home' %}">Home Page</a><p />
+
+</div>

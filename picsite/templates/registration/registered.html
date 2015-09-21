@@ -1,0 +1,13 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+<title>{% block title %} {{ title }} of {{ site }} {% endblock %}</title>
+
+
+<h2> You have successfully registered! </h2>
+<p> Click <a href="{% url 'picsite:index' %}"> here </a> to log in</p>
+
+<!-- {% block footer %}
+<a href="{% url 'picsite:home' %}"> Return to home page </a>
+{% endblock %} -->

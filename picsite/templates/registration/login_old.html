@@ -1,0 +1,35 @@
+<!-- load the static template tag from staticfiles templage library, which generates absolute url of the static file --> 
+
+
+{% load staticfiles %}
+{% block title %} <title>{{ title }}</title> {% endblock title %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+<div class="header">
+	<h4>Welcomez... please log in</h4>
+</div>
+
+
+{# {{ varFromViewContext }}, {% Python code %}; HTML lives outside  of { } #}
+
+<!-- <body> -->
+
+	{% if form.errors %}
+		<p class="error"> Sorry, that username/password combo is not valid</p>
+	{% endif %}
+
+	<form action="{% url 'picsite:auth_view' %}" method="POST"> {% csrf_token %}	
+		<label for="username"> Username: </label>
+		<input type="text" name="username" value="" id="username">
+		<label for="password"> Password: </label>
+		<input type="password" name="password" value="" id="password">
+
+
+		<input type="submit" value="login" />
+	</form>
+
+<!-- 	<div class="footer">
+		{% block footer %} <a href="{% url 'picsite:home' %}"> Return to home page </a> {% endblock %}
+	</div> -->
+<!-- </body> -->
+<!-- </html>

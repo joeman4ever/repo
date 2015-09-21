@@ -1,0 +1,17 @@
+<!-- load the static template tag from staticfiles templage library, which generates absolute url of the static file -->
+
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'picsite/style.css' %}" />
+
+{# {{ varFromViewContext }}, {% Python code %}; HTML lives outside  of { } #}
+ 
+<div class="header">
+	<title><h3>{% block title %} User Login Page {% endblock %}</h3></title>
+</div>
+
+
+
+<div class="footer">
+	<a href="{% url 'picsite:index' %}"> Return to home page </a>
+</div>

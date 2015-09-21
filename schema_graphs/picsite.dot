@@ -1,0 +1,70 @@
+digraph model_graph {
+  // Dotfile by Django-Extensions graph_models
+  // Created: 2015-02-08 09:31
+  // Cli Options: picsite
+
+  fontname = "Helvetica"
+  fontsize = 8
+  splines  = true
+
+  node [
+    fontname = "Helvetica"
+    fontsize = 8
+    shape = "plaintext"
+  ]
+
+  edge [
+    fontname = "Helvetica"
+    fontsize = 8
+  ]
+
+  // Labels
+
+
+  picsite_models_Photo [label=<
+    <TABLE BGCOLOR="palegoldenrod" BORDER="0" CELLBORDER="0" CELLSPACING="0">
+    <TR><TD COLSPAN="2" CELLPADDING="4" ALIGN="CENTER" BGCOLOR="olivedrab4">
+    <FONT FACE="Helvetica Bold" COLOR="white">
+    Photo
+    </FONT></TD></TR>
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Helvetica Bold">id</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Helvetica Bold">AutoField</FONT>
+    </TD></TR>
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Helvetica ">photo_id</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Helvetica ">IntegerField</FONT>
+    </TD></TR>
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Helvetica ">photo_item</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Helvetica ">ImageField</FONT>
+    </TD></TR>
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Helvetica ">photo_name</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Helvetica ">CharField</FONT>
+    </TD></TR>
+  
+    <TR><TD ALIGN="LEFT" BORDER="0">
+    <FONT FACE="Helvetica ">upload_date</FONT>
+    </TD><TD ALIGN="LEFT">
+    <FONT FACE="Helvetica ">DateTimeField</FONT>
+    </TD></TR>
+  
+    </TABLE>
+    >]
+
+
+
+
+  // Relations
+
+}
+

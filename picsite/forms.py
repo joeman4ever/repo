@@ -1,7 +1,7 @@
 """ Import ModelForm subclass to leverage fields from Photo model in creating
 form ojbect """
 
-from django.forms import ModelForm, Textarea
+from django.forms import ModelForm, Textarea, ImageField, FileField
 from picsite.models import Photo, Album
 from django import forms
 from django.utils.translation import ugettext_lazy as _
@@ -18,6 +18,7 @@ class PhotoForm(ModelForm):
 
 # This is the form for creating a photo album
 class AlbumForm(ModelForm):
+	photos = ImageField
 
 	class Meta:
 		model = Album
@@ -26,6 +27,7 @@ class AlbumForm(ModelForm):
 		fields = ['name', 'description', 'photos']
 		widgets = {
 			'description' : Textarea(attrs={'cols': 40, 'rows': 2}),
+			# 'photos' : Textarea(attrs={'cols': 40, 'rows': 1})
 		}
 		labels = {
 			'name': _('Album Name'),
@@ -41,6 +43,7 @@ class AlbumForm(ModelForm):
 		}
 
 # This is for the 2nd page of album creation
+# AlbumForm2 is not currently being used.
 class AlbumForm2(ModelForm):
 
 	class Meta:

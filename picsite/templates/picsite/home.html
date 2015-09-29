@@ -14,7 +14,7 @@
 
 
 	<p>Upload a photo using the form below:</p>
-
+	<!-- @markmhx - this is the form declaration on the home page for uploading individual photos -->
 	<!-- the enctype declaration is needed for image uploads -->
 	<form action="{% url 'picsite:home' %}" method="POST" enctype="multipart/form-data">
 		{% csrf_token %} {{ form.as_table }}

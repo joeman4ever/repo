@@ -101,6 +101,8 @@ def registered(request):
 	return render(request, 'registration/registered.html', context)
 
 # Creating albums
+# @markmhx -- here's the "controller" for the album page. It's essentially same 
+# as the home controller above.
 def albums(request):
 	title = "Create an album"
 	#process the form and grab uploaded file and then set owner to request.user

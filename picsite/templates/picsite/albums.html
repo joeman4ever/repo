@@ -9,7 +9,8 @@
 <p><a href="{% url 'picsite:home' %}"> Home </a></p>
 
 Customize album details below
-
+<!-- 
+@markmhx - this below is all I need to leverage the ModelForm function in creating a form based on a pre-existing model. -->
 <!-- the enctype declaration is needed for image uploads -->
 	<form action="{% url 'picsite:albums' %}" method="POST" enctype="multipart/form-data">
 		{% csrf_token %} {{ form.as_p }}

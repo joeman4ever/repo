@@ -9,6 +9,8 @@ from django.contrib.auth.models import User #Using this built-in instead of crea
 # No need to create a model for the join table, simply define relationships w/in the models
 # Django autoo-creates an auto-incrementing primary key called id for each model (table)
 
+# @markmhx - my initial photo upload form is based on this model below. The ImageField
+# type is what presents end-user with option to upload a file.
 class Photo(models.Model):
 	# Creates picsite_photo db table with below fields as attributes for each photo
 	# max_length is required for CharField; table name is picsite_photo
@@ -26,6 +28,10 @@ class Photo(models.Model):
 
 
 # Creating picsite_album db table that has ManyToMany relationship with picsite_photo
+# @Markmhx -- here's model that the album creation form is based on. Notice photos
+# field has M2M relationship with Photo model above. When rendered, this form below
+# presents a multi-choice list of existing photos for end-user to pick from, rather than
+# prompting user to upload a new picture.
 class Album(models.Model):
 	name = models.CharField(max_length=50)
 	dateCreated = models.DateTimeField('created', default=datetime.datetime.now, null=True)

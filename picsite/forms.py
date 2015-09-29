@@ -8,7 +8,8 @@ from django.utils.translation import ugettext_lazy as _
 
 
 # Creating the form class by specifing model & field names for inheritance. 
-# This is the form for uploading a photo
+# This is the form for uploading a photo, the for used on Home page.
+# @markmhx
 class PhotoForm(ModelForm):
 	class Meta:
 		model = Photo
@@ -17,6 +18,7 @@ class PhotoForm(ModelForm):
 		fields = ['name', 'uploadDate', 'uploadPath', 'caption']
 
 # This is the form for creating a photo album
+# @markmhx - this is where the Album form is defined
 class AlbumForm(ModelForm):
 	photos = ImageField
 

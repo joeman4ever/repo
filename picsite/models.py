@@ -28,10 +28,6 @@ class Photo(models.Model):
 
 
 # Creating picsite_album db table that has ManyToMany relationship with picsite_photo
-# @Markmhx -- here's model that the album creation form is based on. Notice photos
-# field has M2M relationship with Photo model above. When rendered, this form below
-# presents a multi-choice list of existing photos for end-user to pick from, rather than
-# prompting user to upload a new picture.
 class Album(models.Model):
 	name = models.CharField(max_length=50)
 	dateCreated = models.DateTimeField('created', default=datetime.datetime.now, null=True)

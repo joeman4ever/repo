@@ -9,8 +9,7 @@ from django.contrib.auth.models import User #Using this built-in instead of crea
 # No need to create a model for the join table, simply define relationships w/in the models
 # Django autoo-creates an auto-incrementing primary key called id for each model (table)
 
-# @markmhx - my initial photo upload form is based on this model below. The ImageField
-# type is what presents end-user with option to upload a file.
+#Defining Photo model. The photo upload form on homepage is based on this model.
 class Photo(models.Model):
 	# Creates picsite_photo db table with below fields as attributes for each photo
 	# max_length is required for CharField; table name is picsite_photo

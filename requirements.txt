@@ -1,0 +1,5 @@
+Django==1.9
+mod-wsgi==4.4.21
+Pillow==3.0.0
+wheel==0.24.0
+yolk==0.4.3

@@ -11,7 +11,7 @@ urlpatterns = patterns('',
    
     # Enable URL patterns for installed applications
     url(r'^picsite/', include('picsite.urls', namespace="picsite")),
-	url(r'^polls/', include('polls.urls', namespace="polls")),
+	# url(r'^polls/', include('polls.urls', namespace="polls")),
 	
 	# Enable URL patterns for the admin portal
 	url(r'^admin/', include(admin.site.urls)),

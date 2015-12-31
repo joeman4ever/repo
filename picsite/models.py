@@ -1,5 +1,6 @@
 from django.db import models
-import datetime
+from django.utils import timezone 
+# import datetime
 
 from django.contrib.auth.models import User #Using this built-in instead of creating my own
 
@@ -14,7 +15,7 @@ class Photo(models.Model):
 	# Creates picsite_photo db table with below fields as attributes for each photo
 	# max_length is required for CharField; table name is picsite_photo
 	name = models.CharField('name', max_length=50)
-	uploadDate = models.DateTimeField('date', default=datetime.datetime.now, null=True)
+	uploadDate = models.DateTimeField('date', default=timezone.now, null=True)
 	# upload_to is a sub-directory of MEDIA_ROOT defined in settings.py
 	uploadPath = models.ImageField('path', upload_to= 'images/%Y/%m/%d/')
 	caption = models.CharField(max_length=200, null=True)
@@ -29,7 +30,7 @@ class Photo(models.Model):
 # Creating picsite_album db table that has ManyToMany relationship with picsite_photo
 class Album(models.Model):
 	name = models.CharField(max_length=50)
-	dateCreated = models.DateTimeField('created', default=datetime.datetime.now, null=True)
+	dateCreated = models.DateTimeField('created', default=timezone.now, null=True)
 	description = models.CharField(max_length=300, null=True)
 	category = models.CharField(max_length=50, default="Test")
 	photos = models.ManyToManyField(Photo)

@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     # 'polls',
     'picsite',
     # 'django_extensions',
+    'mod_wsgi.server',
 )
 
 MIDDLEWARE_CLASSES = (

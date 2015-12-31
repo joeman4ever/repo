@@ -6,7 +6,8 @@ from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 # from django.contrib.auth import authenticate, login, logout
-from django.core.context_processors import csrf
+# from django.core.context_processors import csrf
+from django.template.context_processors import csrf
 from django.contrib.auth.decorators import login_required
 
 from picsite.models import Photo, Album

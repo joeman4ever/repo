@@ -4,11 +4,12 @@
 # from django.conf.urls.static import static
 
 from django.conf.urls import patterns, url, include
+from django.contrib.auth.views import logout, password_change, password_change_done
 
 from picsite import views
 
 # defining a list of url regex patterns to be used in processing requests
-urlpatterns = patterns('',
+urlpatterns = [
 	# ex: /picsite/ ; only requires http request as variable in url
 	# format: url(regex pattern, function in views.py to handle the request, friendly name)
 	url(r'^$', views.index, name='index'),
@@ -32,9 +33,9 @@ urlpatterns = patterns('',
 
 	# Using Django's built-in views. The pattern below includes the ff URL patterns:
 	# ^login/$ [name='login']
-	url(r'^logout/$', 'django.contrib.auth.views.logout', {'template_name': 'picsite/accounts/logged_out.html'}),
-	url(r'^password_change/$', 'django.contrib.auth.views.password_change', {'template_name': 'picsite/accounts/password_change_form.html', 'post_change_redirect': 'picsite:password_change_done'}),
-	url(r'^password_change/done/$', 'django.contrib.auth.views.password_change_done', {'template_name': 'picsite/accounts/password_change_done.html'}),
+	url(r'^logout/$', logout, {'template_name': 'picsite/accounts/logged_out.html'}),
+	url(r'^password_change/$', password_change, {'template_name': 'picsite/accounts/password_change_form.html', 'post_change_redirect': 'picsite:password_change_done'}),
+	url(r'^password_change/done/$', password_change_done, {'template_name': 'picsite/accounts/password_change_done.html'}),
 	# ^password_reset/$ [name='password_reset']
 	# ^password_reset/done/$ [name='password_reset_done']
 	# ^reset/(?P<uidb64>[0-9A-Za-z_\-]+)/(?P<token>[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$ [name='password_reset_confirm']
@@ -47,4 +48,4 @@ urlpatterns = patterns('',
 	# url(r'^accounts/logout_view/$', views.logout_view, name='logout_view'),
 	# url(r'^accounts/loggedin/$', views.loggedin, name='loggedin'),
 	# url(r'^accounts/invalid_login/$', views.invalid_login, name='invalid_login')
-)
+]

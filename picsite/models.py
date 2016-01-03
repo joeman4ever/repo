@@ -33,7 +33,7 @@ class Album(models.Model):
 	dateCreated = models.DateTimeField('created', default=timezone.now, null=True)
 	description = models.CharField(max_length=300, null=True)
 	category = models.CharField(max_length=50, default="Test")
-	photos = models.ManyToManyField(Photo, null=True)
+	photos = models.ManyToManyField(Photo)
 	owner = models.ForeignKey(User)
 
 	def __str__(self):

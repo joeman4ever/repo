@@ -1,0 +1,770 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"h",
+				"hover"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"i",
+				"inline"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"col",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border-bo",
+				"border-bottom-color"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"border-st",
+				"border-right-style"
+			],
+			[
+				"border-top",
+				"border-top-style"
+			],
+			[
+				"d",
+				"double"
+			],
+			[
+				"bord",
+				"border-spacing"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"co",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"datetime",
+				"datetime"
+			],
+			[
+				"date",
+				"datetime"
+			],
+			[
+				"photo",
+				"photolist"
+			],
+			[
+				"context",
+				"context"
+			],
+			[
+				"get_",
+				"get_object_or_404"
+			],
+			[
+				"conte",
+				"context_object_name"
+			],
+			[
+				"Pho",
+				"PhotolistView"
+			],
+			[
+				"con",
+				"context_object_name"
+			],
+			[
+				"uplo",
+				"upload_date"
+			],
+			[
+				"template",
+				"template_name"
+			],
+			[
+				"obj",
+				"get_object_or_404"
+			],
+			[
+				"pho",
+				"photo_id"
+			],
+			[
+				"phto",
+				"photo_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "templates/picsite/albums.html",
+			"settings":
+			{
+				"buffer_size": 1225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/picsite/home.html",
+			"settings":
+			{
+				"buffer_size": 1399,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/picsite/index.html",
+			"settings":
+			{
+				"buffer_size": 444,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/picsite/photo_upload.html",
+			"settings":
+			{
+				"buffer_size": 840,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/picsite/photolist.html",
+			"settings":
+			{
+				"buffer_size": 1080,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/login.html",
+			"settings":
+			{
+				"buffer_size": 1816,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/logged_out.html",
+			"settings":
+			{
+				"buffer_size": 410,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/password_change_form.html",
+			"settings":
+			{
+				"buffer_size": 2051,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/password_change_done.html",
+			"settings":
+			{
+				"buffer_size": 671,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/register.html",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/registration/registered.html",
+			"settings":
+			{
+				"buffer_size": 403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/picsite/style.css",
+			"settings":
+			{
+				"buffer_size": 1552,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/detail.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/more.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/albums.html,",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/home.html,",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/index.html,",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/photolist.html,",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/photo_upload.html,",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/detail.html,",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/logged_out.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/password_change_form.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/password_change_done.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/loggedin.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/register.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/photo_upload.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/home.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/albums.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/registered.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/password_change_form.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/password_change_done.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/logged_out.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/invalid_login.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/login_1.html",
+		"/Users/jadu/DjangoDocs/django-polls/polls/models.py",
+		"/Users/jadu/DjangoDocs/django-polls/polls/templates/polls/results.html",
+		"/Users/jadu/DjangoDocs/django-polls/polls/templates/polls/vote.html",
+		"/Users/jadu/DjangoDocs/django-polls/polls/views.py",
+		"/Users/jadu/DjangoDocs/mysite/lib/python2.7/site-packages/django/contrib/auth/models.py",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/login.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/registration/login_old.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/login.html",
+		"/Users/jadu/DjangoDocs/mysite/lib/python2.7/site-packages/django/contrib/admin/templates/registration/logged_out.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/logout.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/registration/login.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/registration/logins.html",
+		"/Users/jadu/DjangoDocs/mysite/templates/picsite/registration/loginz.html",
+		"/Users/jadu/DjangoDocs/mysite/templates/picsite/registration/login.html",
+		"/Users/jadu/DjangoDocs/mysite/templates/registration/login.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/login.html",
+		"/Users/jadu/DjangoDocs/mysite/templates/admin/base_site.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/accounts/invalid.html",
+		"/Users/jadu/DjangoDocs/mysite/mysite/urls.py",
+		"/Users/jadu/DjangoDocs/mysite/urls.py",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/index.html",
+		"/Users/jadu/DjangoDocs/django-polls/polls/urls.py",
+		"/Users/jadu/DjangoDocs/django-polls/polls/templates/polls/detail.html",
+		"/Users/jadu/DjangoDocs/mysite/mysite/urls.pyc",
+		"/Users/jadu/DjangoDocs/mysite/picsite/templates/picsite/photolist.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/views.py",
+		"/Users/jadu/DjangoDocs/mysite/picsite/tests.py",
+		"/Users/jadu/DjangoDocs/django-polls/polls/admin.py",
+		"/Users/jadu/DjangoDocs/mysite/templates/admin/index.html",
+		"/Users/jadu/DjangoDocs/mysite/picsite/migrations/0001_initial.py",
+		"/Users/jadu/DjangoDocs/mysite/polls/static/polls/style.css",
+		"/Users/jadu/DjangoDocs/mysite/mysite/wsgi.py",
+		"/Users/jadu/DjangoDocs/mysite/mysite/__init__.py",
+		"/Users/jadu/DjangoDocs/mysite/polls/templates/polls/detail.html",
+		"/Users/jadu/DjangoDocs/mysite/polls/templates/polls/index.html",
+		"/Users/jadu/DjangoDocs/django-polls/README.rst",
+		"/Users/jadu/DjangoDocs/django-polls/setup.py",
+		"/Users/jadu/DjangoDocs/django-polls/MANIFEST.in",
+		"/Users/jadu/DjangoDocs/mysite/polls/templates/polls/vote.html",
+		"/Users/jadu/DjangoDocs/mysite/polls/templates/polls/results.html",
+		"/Users/jadu/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/jadu/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jadu/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"adm",
+			"admin",
+			"form",
+			"cache",
+			"photo_id",
+			"settings",
+			"ROOT",
+			"static",
+			"media",
+			"-->"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "templates/picsite/albums.html",
+					"settings":
+					{
+						"buffer_size": 1225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/picsite/home.html",
+					"settings":
+					{
+						"buffer_size": 1399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/picsite/index.html",
+					"settings":
+					{
+						"buffer_size": 444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/picsite/photo_upload.html",
+					"settings":
+					{
+						"buffer_size": 840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/picsite/photolist.html",
+					"settings":
+					{
+						"buffer_size": 1080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/registration/login.html",
+					"settings":
+					{
+						"buffer_size": 1816,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/registration/logged_out.html",
+					"settings":
+					{
+						"buffer_size": 410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/registration/password_change_form.html",
+					"settings":
+					{
+						"buffer_size": 2051,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "templates/registration/password_change_done.html",
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "templates/registration/register.html",
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "templates/registration/registered.html",
+					"settings":
+					{
+						"buffer_size": 403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "static/picsite/style.css",
+					"settings":
+					{
+						"buffer_size": 1552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

@@ -13,7 +13,11 @@ Customize album details below
 @markmhx - this below is all I need to leverage the ModelForm function in creating a form based on a pre-existing model. -->
 <!-- the enctype declaration is needed for image uploads -->
 	<form action="{% url 'picsite:albums' %}" method="POST" enctype="multipart/form-data">
-		{% csrf_token %} {{ form.as_p }}
+		{% csrf_token %} 
+		<!-- {{ form.as_p }} -->
+		Album Name: <input type="text" name="name"><br>
+		Album Description: <textarea name="description" rows="2" cols="40"></textarea><br>
+		Photos: <input type="checkbox" name="photos">
 		<input type="submit" value="Create" />
 	</form>
 

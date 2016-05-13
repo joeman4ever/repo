@@ -1,2 +1,2 @@
 # repo
-Branch to track work on Album feature.
+Branch for working on Album feature. 
